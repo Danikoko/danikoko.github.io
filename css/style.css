@@ -2491,3 +2491,11 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 		height: inherit;
 	}
 }
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.cursor-disabled {
+	cursor: not-allowed;
+}

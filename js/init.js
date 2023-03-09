@@ -23,7 +23,7 @@ $.fn.DeeboProgressIsInViewport = function(content) {
 			FrenifyDeebo.loadBlogPosts();
 			FrenifyDeebo.modal();
 			FrenifyDeebo.progress2();
-			FrenifyDeebo.contactForm();
+			// FrenifyDeebo.contactForm();
 			FrenifyDeebo.toTopJumper();
 			FrenifyDeebo.rating();
 			FrenifyDeebo.isotope();
@@ -167,45 +167,45 @@ $.fn.DeeboProgressIsInViewport = function(content) {
 			}
 		},
 		
-		contactForm: function(){
-			$('#send_message').on('click', function(){
-				var form		= $('.section_contact .contact_form');
-				var name 		= $("#name").val();
-				var email 		= $("#email").val();
-				var message 	= $("#message").val();
-				var phone 		= $("#phone").val();
-				var spanSuccess	= form.find(".success");
-				var success     = spanSuccess.data('success');
-				var emailto     = form.data('email');
+		// contactForm: function(){
+		// 	$('#send_message').on('click', function(){
+		// 		var form		= $('.section_contact .contact_form');
+		// 		var name 		= $("#name").val();
+		// 		var email 		= $("#email").val();
+		// 		var message 	= $("#message").val();
+		// 		var phone 		= $("#phone").val();
+		// 		var spanSuccess	= form.find(".success");
+		// 		var success     = spanSuccess.data('success');
+		// 		var emailto     = form.data('email');
 
-				spanSuccess.empty();
-				if(name === ''|| email === ''|| message === '' || emailto === '' || phone === ''){
-					$('.empty_notice').slideDown(500).delay(2000).slideUp(500);
-				}
-				else{
-					$.post(
-						"modal/contact.php",
-						{
-							ajax_name: 		name,
-							ajax_email: 	email,
-							ajax_emailto: 	emailto,
-							ajax_message: 	message,
-							ajax_phone: 	phone
-						}, function(data) {
-							spanSuccess.append(data);
-							if(spanSuccess.find(".contact_error").length){
-								spanSuccess.slideDown(500).delay(2000).slideUp(500);		
-							}else{
-								spanSuccess.append("<span class='contact_success'>" + success + "</span>");
-								spanSuccess.slideDown(500).delay(4000).slideUp(500);
-							}
-							if(data === ''){ form[0].reset();}
-						}
-					);
-				}
-				return false; 
-			});
-		},
+		// 		spanSuccess.empty();
+		// 		if(name === ''|| email === ''|| message === '' || emailto === '' || phone === ''){
+		// 			$('.empty_notice').slideDown(500).delay(2000).slideUp(500);
+		// 		}
+		// 		else{
+		// 			$.post(
+		// 				"modal/contact.php",
+		// 				{
+		// 					ajax_name: 		name,
+		// 					ajax_email: 	email,
+		// 					ajax_emailto: 	emailto,
+		// 					ajax_message: 	message,
+		// 					ajax_phone: 	phone
+		// 				}, function(data) {
+		// 					spanSuccess.append(data);
+		// 					if(spanSuccess.find(".contact_error").length){
+		// 						spanSuccess.slideDown(500).delay(2000).slideUp(500);		
+		// 					}else{
+		// 						spanSuccess.append("<span class='contact_success'>" + success + "</span>");
+		// 						spanSuccess.slideDown(500).delay(4000).slideUp(500);
+		// 					}
+		// 					if(data === ''){ form[0].reset();}
+		// 				}
+		// 			);
+		// 		}
+		// 		return false; 
+		// 	});
+		// },
 		
 		
 		progress2: function(){
