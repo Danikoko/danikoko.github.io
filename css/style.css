@@ -1163,10 +1163,10 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 	right: 0;
 	padding: 20px;
 	background: rgba(0,0,0,0.2); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); /* Standard syntax */
+    background: -webkit-linear-gradient(rgb(0 0 0 / 68%), rgba(0,0,0,0.6)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(0 0 0 / 68%), rgba(0,0,0,0.6)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(0 0 0 / 68%), rgba(0,0,0,0.6)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(0 0 0 / 68%), rgba(0,0,0,1)); /* Standard syntax */
 	transition: all .5s ease;
 	transform: translateY(20px) translateZ(0);
 	opacity: 0;
@@ -1181,7 +1181,7 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 .fn_cs_portfolio .mobile_title span{
 	display: block;
 	font-size: 14px;
-	color: #aaa;
+	color: #ccc;
 }
 /*------------------------------------------------------------------*/
 /*	09) Testimonials
@@ -2162,14 +2162,14 @@ body.resume-opened .deebo_fn__cv .cv__bg2{
 	color: var(--mc);
 }
 .light .fn_cs_portfolio .mobile_title span{
-	color: #777;
+	color: #555;
 }
 .light .fn_cs_portfolio .mobile_title{
 	background: rgba(253,253,253,0.2); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(253,253,253,0), rgba(253,253,253,0.6)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(253,253,253,0), rgba(253,253,253,0.6)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(253,253,253,0), rgba(253,253,253,0.6)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(253,253,253,0), rgba(253,253,253,1)); /* Standard syntax */
+    background: -webkit-linear-gradient(rgb(253 253 253 / 59%), rgba(253,253,253,0.6)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(253 253 253 / 59%), rgba(253,253,253,0.6)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(253 253 253 / 59%), rgba(253,253,253,0.6)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(253 253 253 / 59%), rgba(253,253,253,1)); /* Standard syntax */
 }
 .light h1, 
 .light h2, 

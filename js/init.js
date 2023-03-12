@@ -28,7 +28,7 @@ $.fn.DeeboProgressIsInViewport = function(content) {
 			FrenifyDeebo.rating();
 			FrenifyDeebo.isotope();
 			FrenifyDeebo.portfolioFilter();
-			FrenifyDeebo.magnific();
+			// FrenifyDeebo.magnific();
 			FrenifyDeebo.anchor();
 			// FrenifyDeebo.darklight();
 		},
@@ -66,37 +66,37 @@ $.fn.DeeboProgressIsInViewport = function(content) {
 			});	
 		},
 		
-		magnific: function(){
-			$('.gallery_zoom').each(function() { // the containers for all your galleries
-				$(this).magnificPopup({
-					delegate: 'a.zoom', // the selector for gallery item
-					type: 'image',
-					gallery: {
-					  enabled:true
-					},
-					removalDelay: 300,
-					mainClass: 'mfp-fade'
-				});
+		// magnific: function(){
+		// 	$('.gallery_zoom').each(function() { // the containers for all your galleries
+		// 		$(this).magnificPopup({
+		// 			delegate: 'a.zoom', // the selector for gallery item
+		// 			type: 'image',
+		// 			gallery: {
+		// 			  enabled:true
+		// 			},
+		// 			removalDelay: 300,
+		// 			mainClass: 'mfp-fade'
+		// 		});
 
-			});
-			$('.popup-youtube, .popup-vimeo').each(function() { // the containers for all your galleries
-				$(this).magnificPopup({
-					disableOn: 700,
-					type: 'iframe',
-					mainClass: 'mfp-fade',
-					removalDelay: 160,
-					preloader: false,
-					fixedContentPos: false
-				});
-			});
+		// 	});
+		// 	$('.popup-youtube, .popup-vimeo').each(function() { // the containers for all your galleries
+		// 		$(this).magnificPopup({
+		// 			disableOn: 700,
+		// 			type: 'iframe',
+		// 			mainClass: 'mfp-fade',
+		// 			removalDelay: 160,
+		// 			preloader: false,
+		// 			fixedContentPos: false
+		// 		});
+		// 	});
 
-			$('.soundcloude_link').magnificPopup({
-			  type : 'image',
-			   gallery: {
-				   enabled: true, 
-			   },
-			});	
-		},
+		// 	$('.soundcloude_link').magnificPopup({
+		// 	  type : 'image',
+		// 	   gallery: {
+		// 		   enabled: true, 
+		// 	   },
+		// 	});	
+		// },
 		
 		portfolioFilter: function(){
 			var filter		 = $('.fn_cs_portfolio .portfolio_filter ul');
